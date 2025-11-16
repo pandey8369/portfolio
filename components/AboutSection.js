@@ -53,7 +53,7 @@ const experiences = [
     achievements: ['Full stack development', 'Shopify website maintenance', 'CAMIA platform management']
   },
   {
-    year: 'Dec 2023 - Present',
+    year: 'May 2025 - July 2025',
     title: 'Full Stack Developer',
     company: 'Upahar',
     description: 'Full stack development of upahar website using next.js and firebase as backend.',
