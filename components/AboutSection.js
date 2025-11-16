@@ -53,8 +53,15 @@ const experiences = [
     achievements: ['Full stack development', 'Shopify website maintenance', 'CAMIA platform management']
   },
   {
+    year: 'Dec 2023 - Present',
+    title: 'Full Stack Developer',
+    company: 'Upahar',
+    description: 'Full stack development of upahar website using next.js and firebase as backend.',
+    achievements: ['Full stack development', 'Next.js and Firebase', 'Data cleaning and management (Companies Catalog)']
+  },
+  {
     year: 'May 2024 - Dec 2024',
-    title: 'Freelance Full Stack Developer',
+    title: 'Freelance Web Developer',
     company: 'Scrapwale',
     description: 'End-to-end handling of database, website development and social media post creation.',
     achievements: ['Database management', 'Website development', 'Social media content creation']
@@ -129,7 +136,7 @@ export default function AboutSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                I’m a Full Stack Developer at Plug N Play Biosciences Pvt. Ltd. with over 1.7 years of hands-on experience in building scalable and user-friendly digital solutions. 
+                I’m a Full Stack Developer at Plug N Play Biosciences Pvt. Ltd. with over 2 years of hands-on experience in building scalable and user-friendly digital solutions. 
                 Passionate about learning new technologies and growing every day, I thrive on solving challenges and turning ideas into functional, impactful products.
               </motion.p>
 
