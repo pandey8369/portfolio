@@ -24,6 +24,8 @@ const skills = [
   { name: 'Flutter', icon: '📱' },
   { name: 'SQL', icon: '🗄️' },
   { name: 'API Integration', icon: '🔌' },
+  { name: 'Jupyter Notebook', icon: '📓' },
+  { name: 'Django', icon: '🐍' },
   { name: 'SEO', icon: '📈' },
   { name: 'UI/UX Design', icon: '🎨' },
   { name: 'Shopify', icon: '🛒' },
@@ -35,6 +37,8 @@ const techStack = [
   { name: 'Visual Studio Code', icon: '💻' },
   { name: 'Firestore', icon: '🔥' },
   { name: 'Git & GitHub', icon: '📚' },
+  { name: 'Postman', icon: '🚀' },
+  { name: 'PostgreSQL', icon: '🐘' },
   { name: 'LeetCode', icon: '🧮' },
   { name: 'Shadcn', icon: '🎯' },
   { name: 'AWS', icon: '☁️' }
