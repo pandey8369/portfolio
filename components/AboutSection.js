@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { 
   Code, 
   Globe, 
@@ -136,7 +137,7 @@ export default function AboutSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                I’m a Full Stack Developer at Plug N Play Biosciences Pvt. Ltd. with over 2 years of hands-on experience in building scalable and user-friendly digital solutions. 
+                I'm a Full Stack Developer at Plug N Play Biosciences Pvt. Ltd. with over 2 years of hands-on experience in building scalable and user-friendly digital solutions. 
                 Passionate about learning new technologies and growing every day, I thrive on solving challenges and turning ideas into functional, impactful products.
               </motion.p>
 
@@ -175,10 +176,13 @@ export default function AboutSection() {
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full p-2 shadow-2xl shadow-blue-500/25">
                   <div className="w-full h-full rounded-full bg-gray-900 p-1">
-                    <img 
+                    <Image 
                       src="/images/rohit.jpg" 
                       alt="Rohit Tarkeshwar Pandey" 
+                      width={384}
+                      height={384}
                       className="w-full h-full rounded-full object-cover"
+                      priority
                     />
                   </div>
                 </div>
