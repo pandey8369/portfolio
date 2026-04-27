@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import { Download, ExternalLink, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -85,7 +86,7 @@ export default function Hero() {
             >
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center px-6 lg:px-8 py-2.5 lg:py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all duration-300 font-semibold group text-sm lg:text-base shadow-lg hover:shadow-blue-500/25"
+                className="inline-flex items-center justify-center px-6 lg:px-8 py-2.5 lg:py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all duration-300 font-semibold group"
               >
                 View Projects
                 <ExternalLink size={18} className="ml-2 group-hover:translate-x-1 transition-transform lg:w-5 lg:h-5" />
@@ -94,7 +95,7 @@ export default function Hero() {
               <a
                 href="/resume/resume.pdf"
                 download
-                className="inline-flex items-center justify-center px-6 lg:px-8 py-2.5 lg:py-3 border-2 border-blue-600 text-blue-400 rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold group text-sm lg:text-base"
+                className="inline-flex items-center justify-center px-6 lg:px-8 py-2.5 lg:py-3 border-2 border-blue-600 text-blue-400 rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300 font-semibold group"
               >
                 Download Resume
                 <Download size={18} className="ml-2 group-hover:translate-y-1 transition-transform lg:w-5 lg:h-5" />
@@ -148,10 +149,13 @@ export default function Hero() {
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 p-2 shadow-2xl shadow-blue-500/25">
                 <div className="w-full h-full rounded-full bg-gray-900 p-1">
                   {/* Actual avatar image */}
-                  <img 
+                  <Image 
                     src="/images/rohit.jpg" 
                     alt="Rohit Tarkeshwar Pandey" 
+                    width={384}
+                    height={384}
                     className="w-full h-full rounded-full object-cover"
+                    priority
                   />
                 </div>
               </div>
