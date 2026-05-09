@@ -3,8 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, Github, ExternalLink, Calendar, Tag } from 'lucide-react';
 
-export default function ProjectDetail({ params }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectDetail({ params }) {
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return (

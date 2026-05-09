@@ -90,6 +90,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📧 Contact
 
 - **Name**: Rohit Tarkeshwar Pandey
-- **Email**: pandeyjirohit666@gmail.com
+- **Email**: rohittpandey654@gmail.com
 - **LinkedIn**: [Rohit Pandey](https://www.linkedin.com/in/rohit-pandey-431577274/)
 - **GitHub**: [pandey8369](https://github.com/pandey8369)

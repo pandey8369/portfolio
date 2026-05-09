@@ -1,11 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { 
-  Code, 
-  Globe, 
-  Smartphone, 
-  Palette, 
+import {
+  Code,
+  Globe,
+  Smartphone,
+  Palette,
   Zap,
   Calendar,
   MapPin,
@@ -30,7 +30,12 @@ const skills = [
   { name: 'SEO', icon: '📈' },
   { name: 'UI/UX Design', icon: '🎨' },
   { name: 'Shopify', icon: '🛒' },
-  { name: 'WordPress', icon: '📝' }
+  { name: 'WordPress', icon: '📝' },
+  { name: 'Django REST', icon: '🔌' },
+  { name: 'PostgreSQL', icon: '🐘' },
+  { name: 'Liquid', icon: '💧' },
+  { name: 'GSAP', icon: '🎬' },
+  { name: 'ThreeJS', icon: '🧊' }
 ];
 
 const techStack = [
@@ -42,7 +47,12 @@ const techStack = [
   { name: 'PostgreSQL', icon: '🐘' },
   { name: 'LeetCode', icon: '🧮' },
   { name: 'Shadcn', icon: '🎯' },
-  { name: 'AWS', icon: '☁️' }
+  { name: 'AWS', icon: '☁️' },
+  { name: 'Vercel', icon: '▲' },
+  { name: 'Firebase', icon: '🔥' },
+  { name: 'Supabase', icon: '⚡' },
+  { name: 'Google Cloud', icon: '☁️' },
+  { name: 'SQL Server', icon: '🗄️' }
 ];
 
 const experiences = [
@@ -71,19 +81,34 @@ const experiences = [
 
 const education = [
   {
-    degree: 'BSc in Computer Science',
-    institution: 'Mumbai University',
-    details: '8.98 CGPA'
+    degree: 'Bachelor\'s in Computer Science',
+    institution: 'University of Mumbai',
+    details: '8.98 CGPA (July 2022 – April 2025)'
   },
   {
-    degree: 'SEO Certificate',
-    institution: 'HubSpot',
-    details: 'Digital Marketing'
+    degree: 'HSC - IT (Bifocal)',
+    institution: 'S.I.W.S College, Mumbai',
+    details: '65.50% (May 2020 – June 2022)'
+  },
+  {
+    degree: 'SSC (School Certificates)',
+    institution: 'Jai Bharat English High School',
+    details: '74.80% (Passed March 2020)'
+  },
+  {
+    degree: 'Backend Development & APIs',
+    institution: 'freeCodeCamp',
+    details: 'Professional Certification'
   },
   {
     degree: 'Scientific Computing in Python',
-    institution: 'Online Course',
-    details: 'Data Science'
+    institution: 'freeCodeCamp',
+    details: 'Professional Certification'
+  },
+  {
+    degree: 'Project Management',
+    institution: 'Great Learning',
+    details: 'Professional Certification'
   }
 ];
 
@@ -91,7 +116,7 @@ export default function AboutSection() {
   return (
     <div className="min-h-screen bg-black pt-20">
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         className="relative py-12 px-4 sm:px-6 lg:px-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -99,7 +124,7 @@ export default function AboutSection() {
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            
+
             {/* Left Column - Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -117,7 +142,7 @@ export default function AboutSection() {
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                   About Me
                 </motion.div>
-                
+
                 <motion.h1
                   className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
                   initial={{ opacity: 0, y: 20 }}
@@ -137,8 +162,7 @@ export default function AboutSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                I'm a Full Stack Developer at Plug N Play Biosciences Pvt. Ltd. with over 2 years of hands-on experience in building scalable and user-friendly digital solutions. 
-                Passionate about learning new technologies and growing every day, I thrive on solving challenges and turning ideas into functional, impactful products.
+                I'm a Full Stack Developer with over 2 years of experience developing scalable and production-ready web applications for frontend and backend systems. Skilled in JavaScript, React, NextJS, Django REST Framework, PostgreSQL, Firebase, and Shopify development. Experienced in REST API development, user authentication, ecommerce customization, performance optimization, and cloud integration. Strong background in building booking platforms, data-driven applications, and responsive web solutions with a focus on performance and user experience.
               </motion.p>
 
               <motion.div
@@ -176,9 +200,9 @@ export default function AboutSection() {
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full p-2 shadow-2xl shadow-blue-500/25">
                   <div className="w-full h-full rounded-full bg-gray-900 p-1">
-                    <Image 
-                      src="/images/rohit.jpg" 
-                      alt="Rohit Tarkeshwar Pandey" 
+                    <Image
+                      src="/images/rohit.jpg"
+                      alt="Rohit Tarkeshwar Pandey"
                       width={384}
                       height={384}
                       className="w-full h-full rounded-full object-cover"
@@ -186,7 +210,7 @@ export default function AboutSection() {
                     />
                   </div>
                 </div>
-                
+
                 {/* Floating elements */}
                 <motion.div
                   className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/50"
@@ -195,7 +219,7 @@ export default function AboutSection() {
                 >
                   <span className="text-lg sm:text-2xl">⚡</span>
                 </motion.div>
-                
+
                 <motion.div
                   className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-8 h-8 sm:w-12 sm:h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg shadow-blue-600/50"
                   animate={{ y: [10, -10, 10] }}
@@ -210,7 +234,7 @@ export default function AboutSection() {
       </motion.section>
 
       {/* Skills Section */}
-      <motion.section 
+      <motion.section
         className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -294,7 +318,7 @@ export default function AboutSection() {
       </motion.section>
 
       {/* Experience Section */}
-      <motion.section 
+      <motion.section
         className="py-12 px-4 sm:px-6 lg:px-8 bg-black"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -352,7 +376,7 @@ export default function AboutSection() {
       </motion.section>
 
       {/* Education Section */}
-      <motion.section 
+      <motion.section
         className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
